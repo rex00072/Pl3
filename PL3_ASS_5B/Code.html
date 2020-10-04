@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Code</title>
+</head>
+
+<body>
+	<header>
+		<h1>Code to find digits in an Integer</h1>
+		<hr />
+	</header>
+	<section>
+		<h2>
+			<i>Problem Statement: Write a code in any programming language that
+				counts the digits in a number.</i>
+		</h2>
+		<code style="display: block; background-color: #eee; width: 70%">
+        <pre>
+
+	# Iterative Python program to count 
+	# number of digits in a number 
+		
+	def countDigit(n): 
+		count = 0
+		while n != 0: 
+			n //= 10
+			count+= 1
+		return count 
+		
+	# Driver Code     
+	n = int(input())
+	print ("Number of digits : % d"%(countDigit(n))) 
+
+			</pre
+        >
+      </code>
+	</section>
+	<section>
+		<h3>Sample Input</h3>
+		<kbd style="
+          display: block;
+          background-color: #eee;
+          padding: 30px;
+          width: 70%;
+        ">Enter an integer: 6989
+		</kbd>
+	</section>
+	<section>
+		<h3>Sample Output</h3>
+		<samp style="
+          display: block;
+          background-color: #eee;
+          padding: 30px;
+          width: 70%;
+        ">
+			<code>Number of digits: 4</code>
+		</samp>
+	</section>
+	<section>
+		<h3>Variables used in the program</h3>
+		<var style="
+          display: block;
+          background-color: #eee;
+          padding: 30px;
+          width: 70%;
+        ">
+			count, n
+		</var>
+	</section>
+	<section>
+		<h3>Time Complexity</h3>
+		<p style="
+          display: block;
+          background-color: #eee;
+          padding: 30px;
+          width: 70%;
+        ">
+			O(log<sub>10</sub>(n))
+		</p>
+	</section>
+	<hr />
+	<footer>
+		<p style="display: inline-block">For Algorithm, Refer</p>
+		<a href="https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods/">This</a>
+	</footer>
+</body>
+
+</html>
