@@ -1,0 +1,21 @@
+header{
+  font-style: italic;
+  font-size: 20px;
+  text-align: left;
+}
+#primary{
+  font-style: oblique;
+  /* color: rgb(255,0,0,0.5); */
+  text-align: center;
+}
+
+body{
+  margin: 20px;
+  /* background-color: blue; */
+}
+
+.container{
+  box-shadow: 0.2em;
+  display: flex;
+  border-color: black solid 2px;
+}

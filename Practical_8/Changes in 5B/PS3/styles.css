@@ -1,0 +1,25 @@
+header {
+  font-style: italic;
+  font-size: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  text-decoration-color: black;
+}
+
+body {
+  margin: 20px;
+  padding: 15px 15px;
+  
+}
+
+blockquote {
+  border-width: 1px;
+  border-style: dashed;
+}
+
+
+.container{
+  box-shadow: 0.2em;
+  display: flex;
+  border-color: black solid 2px;
+}

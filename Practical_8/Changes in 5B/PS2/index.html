@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Coding Question</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style media="screen">
+    section {
+      font-family: cursive;
+    }
+
+    .container {
+      box-shadow: 0.2em;
+      display: flex;
+      border-color: black solid 2px;
+    }
+  </style>
+</head>
+
+<body style="background-color: white;">
+  <section>
+    <header>
+      <h2 id="primary">QUESTION:</h2>
+    </header>
+    <p>
+      <strong>
+        Write a code in any programming language that converts binary number
+        to decimal number.</strong>
+    </p>
+  </section>
+  <hr />
+  <div class="container">
+    <section>
+      <h3 style="font-style: italic">Solution:</h3>
+      <code>
+        <pre>
+            // C++ program to convert binary to decimal
+            #include < bits/stdc++.h>
+            using namespace std;
+  
+            // Function to convert binary to decimal
+            int binaryToDecimal(int n)
+            {
+              int num = n;
+              int dec_value = 0;
+  
+              // Initializing base value to 1, i.e 2^0
+              int base = 1;
+  
+              int temp = num;
+              while (temp) {
+                int last_digit = temp % 10;
+                temp = temp / 10;
+  
+                dec_value += last_digit * base;
+  
+                base = base * 2;
+              }
+  
+              return dec_value;
+            }
+  
+            // Driver program to test above function
+            int main()
+            {
+              int num = 10101001;
+  
+              cout << binaryToDecimal(num) << endl;
+            }
+          </pre>
+      </code>
+      <footer>
+        To compile use <kbd>Ctrl</kbd> + <kbd>Enter</kbd> on
+        <small> your</small> device.
+      </footer>
+    </section>
+    <hr />
+    <section>
+      <header>
+        <h3>Sample Input:</h3>
+      </header>
+      <samp>
+        Input : 111 <br />
+        Output : 7<br />
+        Input : 1010<br />
+        Output : 10<br />
+        Input: 100001<br />
+        Output: 33<br />
+      </samp>
+    </section>
+    <hr />
+    <section>
+      <header>
+        <h3>Variables used are :</h3>
+      </header>
+      <var>num</var><br />
+      <var>dec_value</var><br />
+      <var>base</var><br />
+      <var>temp</var><br />
+      <var>last_digit</var><br />
+      <var>n</var><br />
+    </section>
+    <hr />
+    <section>
+  </div>
+  <header>
+    <h3>Complexity of the Code:</h3>
+  </header>
+  The complexity of this <s>algo</s> algorithm is O (Log<sub>2</sub>
+  n)<br />
+  The worst time complexity of <em>Quick Sort</em> is O (n<sup>2</sup>).
+  </section>
+  <hr />
+  <section>
+    <header>
+      The Solution For this problem is also given in geeksforgeeks website.
+      <br />
+      Link is bellow.
+    </header>
+    <nav>
+      <a href="https://www.geeksforgeeks.org/program-binary-decimal-conversion/">geeksforgeeks solution</a>
+    </nav>
+  </section>
+</body>
+
+</html>
