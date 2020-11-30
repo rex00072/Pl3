@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML_FORM</title>
+
+  <style media="screen">
+    form {
+      align-self: center;
+      align-content: center;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    label {
+      padding-top: 10px;
+    }
+
+    input {
+      padding: 10px;
+      border-radius: 0.5em;
+    }
+
+    body {
+      background-color: #2255b3;
+      align-items: center;
+
+    }
+
+    .heading {
+      align-self: center;
+      position: relative;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .button {
+      width: 200px;
+      align-items: center;
+      margin-left: 15em;
+      padding: 5px 5px;
+      border-radius: .2em;
+      margin-top: .5em;
+    }
+  </style>
+  <!-- <link rel="stylesheet" href="/new_styles.css"> -->
+</head>
+
+<body>
+  <header class="heading">
+    <h1>Form Filling Test</h1>
+
+  </header>
+  <section>
+    <form id="form1" action="#" method="post">
+      <label for="name" form="form1">Enter your Name</label><br><br>
+      <input type="text" name="name" placeholder="Name" required><br><br>
+      <label for="img" form="form1" class="img">Submit your photo</label><br><br>
+      <input type="file" name="img" placeholder="image" accept="image/*" required><br><br>
+      <label for="vdo" form="form1">Submit your introduction video</label><br><br>
+      <input type="file" name="vdo" accept="video/*" required><br><br>
+      <label for="pdf" form="form1">Submit your Resume</label><br><br>
+      <input type="file" name="pdf" placeholder="Resume" accept=".pdf" required><br><br>
+      <label for="singing" form="form1">Submit your Song</label><br><br>
+      <input type="file" name="singing" accept="audio/*" disabled><br><br>
+      <label for="textarea" form="form1">Write something about you in 500 characters</label><br><br>
+      <textarea name="textarea" rows="8" cols="80" placeholder="About You" maxlength="500" class="text"
+        style="border-radius: 0.5em;"></textarea><br><br>
+      <button type="submit" name="submit" class="button" for,formmethod="post" formtarget="_top"
+        onclick="myalert()">Submit</button>
+      <script type="text/javascript">
+        function myalert() {
+          alert("Success");
+        }
+      </script>
+      <button type="reset" name="reset" class="button">Reset</button>
+      <button type="submit" name="button" class="button"><img
+          src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fclicking-submit-button-hand-cursor-d-render-50119156.jpg&imgrefurl=https%3A%2F%2Fwww.dreamstime.com%2Fillustration%2Fsubmit.html&tbnid=3DqU-HxptraDHM&vet=12ahUKEwjykMKfvL3sAhVaFCsKHbFTCYcQMygRegUIARDoAQ..i&docid=sSz07WDJD5orkM&w=800&h=640&q=submit&ved=2ahUKEwjykMKfvL3sAhVaFCsKHbFTCYcQMygRegUIARDoAQ"
+          alt="The submit Button"></button>
+    </form>
+  </section>
+  <footer></footer>
+</body>
+
+</html>

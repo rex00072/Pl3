@@ -1,0 +1,22 @@
+header{
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+}
+nav{
+  text-align: center;
+}
+
+table{
+  margin: 100px 500px;
+  border-radius: 5px;
+}
+
+#heade{
+  color:#038899;
+}
+
+.color{
+  color:rgb(255, 0, 0);
+  float: left;
+}
