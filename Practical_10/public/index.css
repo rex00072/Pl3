@@ -50,7 +50,7 @@
   color: white;
 }
 body {
-  background-image: url("./images/dark-1845065_1920.jpg");
+  background-image: url("/images/dark-1845065_1920.jpg");
   height: 100vh;
   margin: 0;
   background-attachment: fixed;
